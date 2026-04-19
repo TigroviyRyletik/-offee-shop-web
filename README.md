@@ -82,8 +82,14 @@ npm run dev
 
 *(Рекомендується додати сюди 2-3 скріншоти готового проєкту після розгортання)*
 - `Головна сторінка з каруселлю`
+<img width="1888" height="910" alt="image" src="https://github.com/user-attachments/assets/0db3bce8-0e74-4059-b409-d7940efaee46" />
+
 - `Сітка товарів (Меню)`
+<img width="1903" height="908" alt="image" src="https://github.com/user-attachments/assets/7415c848-7cb8-44a9-8f39-6585b97723e4" />
+
 - `Сторінка "Про нас"`
+<img width="1901" height="907" alt="image" src="https://github.com/user-attachments/assets/81703ecd-3e6d-45aa-af64-64f9bccd3dd2" />
+
 
 ---
 <div align="center">
