@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+.vscode/
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/

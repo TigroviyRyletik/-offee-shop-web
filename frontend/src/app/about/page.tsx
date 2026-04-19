@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <main>
@@ -7,15 +9,23 @@ export default function AboutPage() {
           <p>Мінімалізм у каві та житті.</p>
         </div>
         
-        <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.8', marginBottom: '80px', color: 'var(--text-muted)', fontSize: '1.1rem' }}>
-          <p style={{ marginBottom: '24px' }}>
-            Ми віримо, що кава — це не просто напій, це ритуал, який об'єднує людей. Наша подорож почалася у 2015 році з невеликої мрії створити простір без зайвого шуму, де кожен гість зможе знайти свій ідеальний смак. 
-          </p>
-          <p>
-            За 10 років ми виросли з маленького віконця до мережі з 5 кав'ярень. Але наша філософія залишилася незмінною: фокус на головному.
-          </p>
+        {/* 2-Column Layout */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '100px' }}>
+          <div style={{ lineHeight: '1.8', color: 'var(--text-muted)', fontSize: '1.1rem' }}>
+            <h2 style={{ fontSize: '2.5rem', color: 'var(--text-dark)', marginBottom: '24px', letterSpacing: '-1px' }}>Наша філософія</h2>
+            <p style={{ marginBottom: '24px' }}>
+              Ми віримо, що кава — це не просто напій, це ритуал, який об'єднує людей. Наша подорож почалася у 2015 році з невеликої мрії створити простір без зайвого шуму, де кожен гість зможе знайти свій ідеальний смак. 
+            </p>
+            <p>
+              За 10 років ми виросли з маленького віконця до мережі з 5 кав'ярень. Але наша філософія залишилася незмінною: фокус на головному. Ми відбираємо лише найкращі зерна і готуємо їх так, щоб розкрити весь потенціал.
+            </p>
+          </div>
+          <div style={{ position: 'relative', height: '600px', borderRadius: '16px', overflow: 'hidden' }}>
+            <Image src="/images/interior_2.png" alt="Наша філософія" fill style={{ objectFit: 'cover' }} />
+          </div>
         </div>
 
+        {/* Stats Grid */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', maxWidth: '1000px', margin: '0 auto' }}>
           <div style={{ padding: '40px', textAlign: 'center', background: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
             <h3 style={{ fontSize: '3rem', color: 'var(--text-dark)', marginBottom: '8px', letterSpacing: '-1px' }}>100%</h3>

@@ -1,6 +1,6 @@
 import { getProductById } from "@/lib/api";
 import Image from "next/image";
-import Link from "next/link";
+import BackButton from "@/components/BackButton";
 import AddToCartButton from "./AddToCartButton";
 
 export const dynamic = 'force-dynamic';
@@ -13,7 +13,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     return (
       <main className="container" style={{ textAlign: "center", paddingTop: "200px" }}>
         <h1>Товар не знайдено</h1>
-        <Link href="/" className="btn-primary" style={{ display: "inline-block", marginTop: "30px" }}>Повернутися до меню</Link>
+        <BackButton />
       </main>
     );
   }
@@ -22,9 +22,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     <main>
       <div className="container" style={{ paddingBottom: '100px' }}>
         <div style={{ margin: '40px 0' }}>
-          <Link href="/" style={{ color: "var(--text-muted)", fontWeight: '500', transition: 'color 0.2s' }}>
-            ← Назад
-          </Link>
+          <BackButton />
         </div>
         
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px' }}>
