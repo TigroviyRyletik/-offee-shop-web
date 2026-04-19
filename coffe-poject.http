@@ -1,0 +1,35 @@
+@coffe_poject_HostAddress = http://localhost:5229
+
+# Получить все категории
+GET {{coffe_poject_HostAddress}}/api/categories
+Accept: application/json
+
+###
+
+# Получить список продуктов
+GET {{coffe_poject_HostAddress}}/api/products
+Accept: application/json
+
+###
+
+# Тест "заглушки" авторизации
+POST {{coffe_poject_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{}
+
+###
+
+# Запрос на создание заказа (требует ID существующего продукта, допустим ProductId = 1)
+POST {{coffe_poject_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 2
+    }
+  ]
+}
